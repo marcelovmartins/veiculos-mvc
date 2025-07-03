@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Veículos</title>
+</head>
+<body>
+  <h1>Veículos Cadastrados</h1>
+  <ul>
+    <% veiculos.forEach(v => { %>
+      <li><strong><%= v.modelo %></strong> — Placa: <%= v.placa %> — Tipo: <%= v.tipo %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
