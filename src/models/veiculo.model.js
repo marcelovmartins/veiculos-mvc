@@ -7,6 +7,7 @@ const pool = mysql.createPool({
   database: 'sistema_veiculos',
 });
 
+
 async function getAll() {
   const [rows] = await pool.query('SELECT * FROM veiculos');
   return rows;

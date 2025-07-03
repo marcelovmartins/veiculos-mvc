@@ -5,4 +5,5 @@ async function listar(req, res) {
   res.render('veiculos', { veiculos });
 }
 
+
 module.exports = { listar };
